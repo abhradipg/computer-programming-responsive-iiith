@@ -51,6 +51,12 @@ window.view = {
 		this.addClickEvent('btnOk', function() { view.proceedToStartButton() })
 		this.addClickEvent('btnStart', function() { view.displayElements() })
 		this.addClickEvent('btnNext', function() { view.sortArray() })
+                this.addClickEvent('btnRandom', function() { if(document.getElementById('btnRandom').checked==true) 
+                                                                { document.getElementById("userInput").disabled = true; }
+                                                              })
+                this.addClickEvent('btnManual', function() { if(document.getElementById('btnManual').checked==true) 
+                                                                { document.getElementById("userInput").disabled = false; }
+                                                              })
 	},
 	proceedToStartButton: function() {
 		var userInput = this.getArraySize()
