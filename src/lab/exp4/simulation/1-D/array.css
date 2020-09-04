@@ -385,6 +385,14 @@ body {
 .keyPosition {
     background: #F5B941;
 }
+.noarrow img {
+    display:none;
+}
+
+.arrow img {
+    display:block;
+}
+
 
 .currentKeyPositionIndicator {
     position: absolute;
