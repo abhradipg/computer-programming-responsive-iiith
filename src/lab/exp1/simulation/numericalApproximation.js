@@ -286,6 +286,10 @@ window.view = {
 			alert('Enter Value of a and b');
 			return false;
 		}
+                else if (valueA2 < 1 || valueA2 > 10 || valueB2 < 1 || valueB2 > 10) {
+                        alert('invalid input');
+                        return false;
+                }
 		else if ( isNaN(valueA1) || isNaN(valueB1)) {
 			alert('Enter numeric value of a and b');
 			return false;
